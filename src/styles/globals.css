@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+@font-face {
+  font-family: '5years';
+  src: local('5years'), url(../fonts/5yearsoldfont.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
