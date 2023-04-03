@@ -72,6 +72,35 @@ export default function Board() {
                 </Box>
 
             </Box>
+
+            <Box position={"relative"} overflow="hidden">
+                <Box zIndex={10} position={"absolute"} top="0" left="0" width="100%">
+                    <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680468921/Boston%20Academy/Frame_5168_scjc7b.svg" alt="" style={{ objectFit: "cover", width: "100%" }} />
+                </Box>
+                <Box position="relative" zIndex={1000} padding="6rem" display="flex" flexDirection={"column"} gap="6rem">
+                    <Box display={"grid"} gridTemplateColumns="1fr 1fr">
+                        <Box display={"flex"} alignItems="center" gap="0.5rem">
+                            <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
+                            <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Why choose BUA?</Typography>
+                        </Box>
+                        <Typography width="30rem" fontSize={"1.25rem"}>BUA provides young children, living in under-resourced Boston neighborhoods, a tuition free, high-quality, innovative education. Our students love learning, think critically and know their worth.
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <Image
+                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680537649/Boston%20Academy/chairperson_oiiqpj.png"
+                            alt={`Young african american boy writing`}
+                            layout={"responsive"}
+                            style={{
+                                margin: 0,
+                            }}
+                            width={0}
+                            height={0}
+                            priority={true}
+                        />
+                    </Box>
+                </Box>
+            </Box>
         </Box>
     )
 }

@@ -51,8 +51,24 @@ const lightThemeOptions: ThemeOptions = {
             "&:hover": {
               backgroundColor: "#C71717"
             },
-            padding: ["1rem 2rem"],
+            height: "fit-content",
             borderRadius: "4rem"
+          }
+        }
+      ]
+    },
+    MuiTypography: {
+      variants: [
+        {
+          props: {variant: "h2"},
+          style: {
+            fontSize: ["2rem"]
+          }
+        },
+        {
+          props: {variant: "body1"},
+          style: {
+            fontSize: "1rem"
           }
         }
       ]

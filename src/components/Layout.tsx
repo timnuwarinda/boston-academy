@@ -58,7 +58,7 @@ export default function Layout({ children }: Props) {
                         />
                     </Box>
                     <Box display="flex" gap="3rem" alignItems="center">
-                        <Box display="flex" gap="1rem">
+                        <Box gap="1rem" display={["none", "flex"]}>
                             <Link href="/">HOME</Link>
                             <Link href="/about">ABOUT</Link>
                             <Link href="/board">BOARD</Link>
