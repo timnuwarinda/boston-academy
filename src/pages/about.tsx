@@ -49,7 +49,7 @@ export default function About() {
 
             </Box>
 
-            <Box p="6rem">
+            <Box p="6rem" display="flex" flexDirection={"column"} gap="12rem">
                 <Box display={"grid"} gridTemplateColumns="1fr 1fr">
                     <Box display={"flex"} alignItems="center" gap="0.5rem">
                         <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
@@ -57,7 +57,7 @@ export default function About() {
                     </Box>
                     <Typography width="30rem" fontSize={"1.25rem"}>Boston Urban Academy, an independent, elementary school offers families a choice for high quality, public school education</Typography>
                 </Box>
-                <Box display={"flex"}>
+                <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap="4rem">
                     <Box>
                         <Image
                             src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680466657/Boston%20Academy/Rectangle_81_qzcozb.png"
@@ -72,58 +72,63 @@ export default function About() {
                         />
                     </Box>
                     <Box>
-                        <Image
-                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680466657/Boston%20Academy/Rectangle_82_thjrjd.png"
-                            alt={`Young african american boy writing`}
-                            layout={"responsive"}
-                            style={{
-                                margin: 0,
-                            }}
-                            width={0}
-                            height={0}
-                            priority={true}
-                        />
+                        <Box height="6rem"></Box>
+                        <Box>
+                            <Image
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680466657/Boston%20Academy/Rectangle_82_thjrjd.png"
+                                alt={`Young african american boy writing`}
+                                layout={"responsive"}
+                                style={{
+                                    margin: 0,
+                                }}
+                                width={0}
+                                height={0}
+                                priority={true}
+                            />
+                        </Box>
                     </Box>
                 </Box>
 
-                <Box display={"flex"} alignItems="center" gap="0.5rem">
-                    <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
-                    <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Our Values</Typography>
-                </Box>
-                <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap="4rem">
-                    <Box>
-                        <Box>
-                            <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Group-1_pxh8xh.png" style={{ height: "4rem" }} />
-                        </Box>
-                        <Typography variant="h3" color="#F0AD00">Comprehensive</Typography>
-                        <Typography width="30rem" fontSize={"1.25rem"}>
-                            We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
-                            The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
-                        </Typography>
+                <Box display="flex" flexDirection="column" gap="4rem">
+                    <Box display={"flex"} alignItems="center" gap="0.5rem">
+                        <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
+                        <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Our Values</Typography>
                     </Box>
-
-                    <Box>
+                    <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap="4rem">
                         <Box>
-                            <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Vector_kgu5fz.png" style={{ height: "4rem" }} />
+                            <Box>
+                                <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Group-1_pxh8xh.png" style={{ height: "4rem" }} />
+                            </Box>
+                            <Typography variant="h3" color="#F0AD00">Comprehensive</Typography>
+                            <Typography width="30rem" fontSize={"1.25rem"}>
+                                We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
+                                The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
+                            </Typography>
                         </Box>
-                        <Typography variant="h3" color="#F0AD00">Collaborative</Typography>
-                        <Typography width="30rem" fontSize={"1.25rem"}>
-                            We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
-                            The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
-                        </Typography>
-                    </Box>
 
-                    <Box>
                         <Box>
-                            <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Group_amhyid.png" style={{ height: "4rem" }} />
+                            <Box>
+                                <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Vector_kgu5fz.png" style={{ height: "4rem" }} />
+                            </Box>
+                            <Typography variant="h3" color="#F0AD00">Collaborative</Typography>
+                            <Typography width="30rem" fontSize={"1.25rem"}>
+                                We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
+                                The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
+                            </Typography>
                         </Box>
-                        <Typography variant="h3" color="#F0AD00">Caring</Typography>
-                        <Typography width="30rem" fontSize={"1.25rem"}>
-                            We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
-                            The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
-                        </Typography>
-                    </Box>
 
+                        <Box>
+                            <Box>
+                                <img src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Group_amhyid.png" style={{ height: "4rem" }} />
+                            </Box>
+                            <Typography variant="h3" color="#F0AD00">Caring</Typography>
+                            <Typography width="30rem" fontSize={"1.25rem"}>
+                                We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
+                                The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
+                            </Typography>
+                        </Box>
+
+                    </Box>
                 </Box>
 
             </Box>
@@ -170,7 +175,7 @@ export default function About() {
                     </Typography>
                 </Box>
 
-                <Box>
+                <Box maxWidth="50rem" marginX={"auto"}>
                     <Image
                         src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680495458/Boston%20Academy/Group_5202_yhbubb.svg"
                         alt={`Young african american boy writing`}
@@ -200,64 +205,85 @@ export default function About() {
                         priority={true}
                     />
                 </Box>
-                <Box display="flex" justifyContent={"space-between"}>
+                <Box display="flex" justifyContent={"space-between"} padding="6rem">
                     <Box display={"flex"} flexDirection="column" alignItems={"center"}>
-                        <Typography fontSize={"8rem"} color="#0E4D65" lineHeight="100%">30+</Typography>
+                        <Typography fontSize={"6rem"} color="#0E4D65" lineHeight="100%">30+</Typography>
                         <Typography color="black" fontSize="1.5rem">Projects</Typography>
                     </Box>
                     <Box display={"flex"} flexDirection="column" alignItems={"center"}>
-                        <Typography fontSize={"8rem"} color="#0E4D65" lineHeight="100%">300+</Typography>
+                        <Typography fontSize={"6rem"} color="#0E4D65" lineHeight="100%">300+</Typography>
                         <Typography color="black" fontSize="1.5rem">Students</Typography>
                     </Box>
                     <Box display={"flex"} flexDirection="column" alignItems={"center"}>
-                        <Typography fontSize={"8rem"} color="#0E4D65" lineHeight="100%">10 Years</Typography>
+                        <Typography fontSize={"6rem"} color="#0E4D65" lineHeight="100%">10 Years</Typography>
                         <Typography color="black" fontSize="1.5rem">Of Changing Lives</Typography>
                     </Box>
                 </Box>
 
-                <Box>
+                <Box padding="6rem" display="flex" flexDirection="column" gap="2rem">
                     <Box display={"flex"} alignItems="center" gap="0.5rem">
                         <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                         <Typography fontSize="2rem" fontFamily="Gilroy-Bold" color="#3C3C3C">Our Partners</Typography>
                     </Box>
-                    <Box display={"flex"} width='100%'>
-                        <Box height="6rem" border="1px solid red" overflow="hidden">
-                            <Image
+                    <Box display={"flex"} width='100%' gap="4rem">
+                        <Box height="6rem">
+                            <img
                                 src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500005/Boston%20Academy/WTR_1000_2021_recommended_firm_signature_0_1_tgzsl4.png"
                                 alt={`Young african american boy writing`}
-                                layout={"responsive"}
                                 style={{
                                     margin: 0,
+                                    objectFit: "cover"
                                 }}
-                                width={0}
-                                height={0}
-                                priority={true}
                             />
                         </Box>
-                        <Box height="6rem" border="1px solid red" overflow="hidden">
-                            <Image
+                        <Box height="6rem">
+                            <img
                                 src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500006/Boston%20Academy/MYVptHf6_400x400_1_c6rena.png"
                                 alt={`Young african american boy writing`}
-                                layout={"responsive"}
                                 style={{
                                     margin: 0,
+                                    objectFit: "cover"
                                 }}
-                                width={0}
-                                height={0}
-                                priority={true}
                             />
                         </Box>
-                        <Box height="6rem" border="1px solid red" overflow="hidden">
-                            <Image
+                        <Box height="6rem">
+                            <img
                                 src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500004/Boston%20Academy/African-legal-Awards-2020_1_qpbuze.png"
                                 alt={`Young african american boy writing`}
-                                layout={"responsive"}
                                 style={{
                                     margin: 0,
+                                    objectFit: "cover"
                                 }}
-                                width={0}
-                                height={0}
-                                priority={true}
+                            />
+                        </Box>
+                        <Box height="6rem">
+                            <img
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500005/Boston%20Academy/WTR_1000_2021_recommended_firm_signature_0_1_tgzsl4.png"
+                                alt={`Young african american boy writing`}
+                                style={{
+                                    margin: 0,
+                                    objectFit: "cover"
+                                }}
+                            />
+                        </Box>
+                        <Box height="6rem">
+                            <img
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500006/Boston%20Academy/MYVptHf6_400x400_1_c6rena.png"
+                                alt={`Young african american boy writing`}
+                                style={{
+                                    margin: 0,
+                                    objectFit: "cover"
+                                }}
+                            />
+                        </Box>
+                        <Box height="6rem">
+                            <img
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500004/Boston%20Academy/African-legal-Awards-2020_1_qpbuze.png"
+                                alt={`Young african american boy writing`}
+                                style={{
+                                    margin: 0,
+                                    objectFit: "cover"
+                                }}
                             />
                         </Box>
                     </Box>
