@@ -6,7 +6,7 @@ import Head from "next/head"
 import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode, useEffect, useRef, useState } from "react"
-import NavDrawer from "./NavDrawer";
+import NavDrawer from "./Drawer";
 
 interface Props {
     children: ReactNode;
@@ -120,7 +120,7 @@ export default function Layout({ children }: Props) {
                         <Box display="grid" gridTemplateColumns={"1fr 1fr"} gap="4rem">
                             <Box display="flex" flexDirection="column" gap="1rem">
                                 <Typography fontFamily="Gilroy-Bold">Site Map</Typography>
-                                <Link href="/home">
+                                <Link href="/">
                                     <Typography>
                                         Home
                                     </Typography>

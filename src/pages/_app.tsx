@@ -49,11 +49,9 @@ const MyApp: React.FunctionComponent<MyAppProps> = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
-        <Layout>
           {
             loading ? <Typography>Loading...</Typography> : <Component {...pageProps} />
           }
-        </Layout>
       </ThemeProvider>
     </CacheProvider>
   );
