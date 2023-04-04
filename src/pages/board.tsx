@@ -66,7 +66,7 @@ export default function Board() {
                 </Box>
 
                 <Box position="relative" display="flex" flexDirection="row" alignItems="center" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]}>
-                    <Typography variant="h2">Board of <br /> Directors</Typography>
+                    <Typography variant="h2" fontSize={["3rem"]}>Board of <br /> Directors</Typography>
                 </Box>
 
                 <Box position="relative" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} display="flex" flexDirection="column" gap="6rem" sx={{ backgroundColor: "#EF2222" }} >

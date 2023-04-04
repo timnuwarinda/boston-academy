@@ -37,8 +37,8 @@ export default function About() {
                     />
                 </Box>
 
-                <Box display="flex" flexDirection={["column", "column", "row"]} alignItems={["flex-start", "flex-start", "center"]} justifyContent="space-between" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} border="1px solid red">
-                    <Typography variant="h2"><span style={{ color: "#f0ad00" }}>ABOUT</span> US</Typography>
+                <Box display="flex" flexDirection={["column", "column", "row"]} alignItems={["flex-start", "flex-start", "center"]} justifyContent="space-between" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]}>
+                    <Typography variant="h2" fontSize={["3rem"]}><span style={{ color: "#f0ad00" }}>ABOUT</span> US</Typography>
                     <Typography variant="body1" fontSize={["1rem", "1.25rem"]} width={["100%", "30rem", "30rem", "40rem"]}>Boston Urban Academy was founded to enable students in under-resourced Boston neighborhoods to reach their highest potential. Sherry Brooks-Roberts transformed her dream into a reality by utilizing her 35 years as an elementary school educator, administrator and change agent.</Typography>
                 </Box>
 
@@ -124,8 +124,8 @@ export default function About() {
                         <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                         <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Our Values</Typography>
                     </Box>
-                    <Box display={"grid"} gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]} gap={["4rem", "2rem"]} width="100%" overflow={"hidden"} border="1px solid red">
-                        <Box width="100%" border="1px solid red" overflow={"hidden"} display="flex" flexDirection="column" gap="0.5rem">
+                    <Box display={"grid"} gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]} gap={["4rem", "2rem"]} width="100%" overflow={"hidden"}>
+                        <Box width="100%" overflow={"hidden"} display="flex" flexDirection="column" gap="0.5rem">
                             <Box sx={{ width: "3rem", height: "4rem", overflow: "hidden" }}>
                                 <Image src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680467440/Boston%20Academy/Group-1_pxh8xh.png"
                                     alt={`Young african american boy writing`}
@@ -139,7 +139,7 @@ export default function About() {
                                 />
                             </Box>
                             <Typography variant="h3" color="#F0AD00" fontSize={["2rem"]} width="100%">Comprehensive</Typography>
-                            <Typography maxWidth={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]} border="1px solid red">
+                            <Typography maxWidth={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]}>
                                 We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
                                 The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
                             </Typography>
@@ -188,7 +188,7 @@ export default function About() {
 
             </Box>
 
-            <Box position={"relative"} overflow="hidden" border="1px solid red">
+            <Box position={"relative"} overflow="hidden">
                 <Box position="absolute" top="0" width={"100%"} display={["block", 'block', "block", "none"]}>
                     <img
                         src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680468921/Boston%20Academy/Frame_5168_scjc7b.svg"
@@ -328,8 +328,8 @@ export default function About() {
                         <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                         <Typography fontSize="2rem" fontFamily="Gilroy-Bold" color="#3C3C3C">Our Partners</Typography>
                     </Box>
-                    <Box display={"flex"} width='100%' gap="4rem" border="1px solid red">
-                        <Box width={["6rem", "6rem"]} border="1px solid red">
+                    <Box display={"flex"} width='100%' gap="4rem">
+                        <Box width={["6rem", "6rem"]}>
                             <Image
                                 src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500005/Boston%20Academy/WTR_1000_2021_recommended_firm_signature_0_1_tgzsl4.png"
                                 alt={`Young african american boy writing`}

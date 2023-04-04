@@ -6,6 +6,7 @@ import Head from "next/head"
 import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode, useEffect, useRef, useState } from "react"
+import NavDrawer from "./NavDrawer";
 
 interface Props {
     children: ReactNode;
@@ -49,13 +50,14 @@ export default function Layout({ children }: Props) {
                 }}
             >
                 <Box display="flex" flexDirection="row" justifyContent={"space-between"} width="100%" sx={{ backgroundColor: "#0e4d65" }} padding={["1rem", "1rem 2rem", "1rem 4rem", "1rem 6rem"]}>
-                    <Box width="8rem" overflow="hidden" border="1px solid red">
+                    <Box width="16rem" overflow="hidden" display="flex" alignItems={"center"}>
                         <Image
                             src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
                             alt={`BUA logo`}
                             layout={"responsive"}
                             style={{
-                                margin: 0,
+                                marginTop: "auto",
+                                marginBottom: "auto",
                             }}
                             width={0}
                             height={0}
@@ -73,13 +75,12 @@ export default function Layout({ children }: Props) {
                             backgroundColor: "#f0ad00",
                             padding: "0.5rem 1rem",
                             lineHeight: "100%",
-                            height: "fit-content"
+                            height: "fit-content",
+                            display: ["none"]
                         }}>
                             DONATE
                         </Button>
-                        <IconButton sx={{color: "white"}}>
-                            <Menu color="inherit" />
-                        </IconButton>
+                        <NavDrawer />
                     </Box>
                 </Box>
             </nav>
@@ -89,23 +90,23 @@ export default function Layout({ children }: Props) {
             <footer style={{ width: "100%", }}>
                 <Box sx={{ backgroundColor: "#0e4d65" }} padding={["1rem", "6rem"]} display="flex" flexDirection={"column"} gap="4rem">
                     <Box display="flex" flexDirection={["column", "row"]} gap="6rem" justifyContent={"space-between"}>
-                        <Box>
-                            <Box width="8rem" overflow="hidden" border="1px solid red">
+                        <Box display={"flex"} flexDirection="column" gap="0.5rem">
+                            <Box width="16rem" overflow="hidden" display="flex" alignItems={"center"}>
                                 <Image
                                     src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
                                     alt={`BUA logo`}
                                     layout={"responsive"}
                                     style={{
-                                        margin: 0,
+                                        marginTop: "auto",
+                                        marginBottom: "auto",
                                     }}
                                     width={0}
                                     height={0}
                                     priority={true}
                                 />
                             </Box>
-                            <Typography fontFamily="Gilroy-Bold" fontSize="2rem">
-                                Support the cause.<br />
-                                Partner with us
+                            <Typography fontFamily="Gilroy-Bold" fontSize={["1rem", "2rem"]}>
+                                Support the cause. Partner with us
                             </Typography>
                             <Button variant="contained" sx={{
                                 backgroundColor: "#f0ad00",
@@ -119,11 +120,31 @@ export default function Layout({ children }: Props) {
                         <Box display="grid" gridTemplateColumns={"1fr 1fr"} gap="4rem">
                             <Box display="flex" flexDirection="column" gap="1rem">
                                 <Typography fontFamily="Gilroy-Bold">Site Map</Typography>
-                                <Link href="/">Home</Link>
-                                <Link href="/">About</Link>
-                                <Link href="/">Board</Link>
-                                <Link href="/">Contact</Link>
-                                <Link href="/">Donate</Link>
+                                <Link href="/home">
+                                    <Typography>
+                                        Home
+                                    </Typography>
+                                </Link>
+                                <Link href="/about">
+                                    <Typography>
+                                        About
+                                    </Typography>
+                                </Link>
+                                <Link href="/board">
+                                    <Typography>
+                                        Board
+                                    </Typography>
+                                </Link>
+                                <Link href="/contact">
+                                    <Typography>
+                                        Contact
+                                    </Typography>
+                                </Link>
+                                <Link href="/">
+                                    <Typography>
+                                        Donate
+                                    </Typography>
+                                </Link>
                             </Box>
                             <Box display="flex" flexDirection="column" gap="1rem">
                                 <Typography fontFamily="Gilroy-Bold">Socials</Typography>
