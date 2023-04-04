@@ -1,4 +1,5 @@
-import { Button, TextField, Typography } from "@mui/material";
+import { Menu } from "@mui/icons-material";
+import { Button, IconButton, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useIsomorphicLayoutEffect } from "framer-motion";
 import Head from "next/head"
@@ -47,18 +48,22 @@ export default function Layout({ children }: Props) {
                     zIndex: 10
                 }}
             >
-                <Box display="flex" flexDirection="row" justifyContent={"space-between"} width="100%" sx={{ backgroundColor: "#0e4d65" }} padding={["1rem", "1rem 6rem"]}>
-                    <Box height="4rem" overflow="hidden" border="1px solid red">
-                        <img
+                <Box display="flex" flexDirection="row" justifyContent={"space-between"} width="100%" sx={{ backgroundColor: "#0e4d65" }} padding={["1rem", "1rem 2rem", "1rem 4rem", "1rem 6rem"]}>
+                    <Box width="8rem" overflow="hidden" border="1px solid red">
+                        <Image
                             src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
-                            alt={`Young african american boy writing`}
+                            alt={`BUA logo`}
+                            layout={"responsive"}
                             style={{
-                                objectFit: "cover",
+                                margin: 0,
                             }}
+                            width={0}
+                            height={0}
+                            priority={true}
                         />
                     </Box>
-                    <Box display="flex" gap="3rem" alignItems="center">
-                        <Box gap="1rem" display={["none", "flex"]}>
+                    <Box display="flex" gap={["1rem", "3rem"]} alignItems="center">
+                        <Box gap="1rem" display={["none", "none", "none", "flex"]}>
                             <Link href="/">HOME</Link>
                             <Link href="/about">ABOUT</Link>
                             <Link href="/board">BOARD</Link>
@@ -72,6 +77,9 @@ export default function Layout({ children }: Props) {
                         }}>
                             DONATE
                         </Button>
+                        <IconButton sx={{color: "white"}}>
+                            <Menu color="inherit" />
+                        </IconButton>
                     </Box>
                 </Box>
             </nav>
@@ -80,15 +88,19 @@ export default function Layout({ children }: Props) {
             </main>
             <footer style={{ width: "100%", }}>
                 <Box sx={{ backgroundColor: "#0e4d65" }} padding={["1rem", "6rem"]} display="flex" flexDirection={"column"} gap="4rem">
-                    <Box display="flex" flexDirection="row" justifyContent={"space-between"}>
+                    <Box display="flex" flexDirection={["column", "row"]} gap="6rem" justifyContent={"space-between"}>
                         <Box>
-                            <Box height="4rem" overflow="hidden" border="1px solid red">
-                                <img
+                            <Box width="8rem" overflow="hidden" border="1px solid red">
+                                <Image
                                     src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
-                                    alt={`Young african american boy writing`}
+                                    alt={`BUA logo`}
+                                    layout={"responsive"}
                                     style={{
-                                        objectFit: "cover",
+                                        margin: 0,
                                     }}
+                                    width={0}
+                                    height={0}
+                                    priority={true}
                                 />
                             </Box>
                             <Typography fontFamily="Gilroy-Bold" fontSize="2rem">
@@ -104,7 +116,7 @@ export default function Layout({ children }: Props) {
                                 DONATE
                             </Button>
                         </Box>
-                        <Box display="flex" gap="4rem">
+                        <Box display="grid" gridTemplateColumns={"1fr 1fr"} gap="4rem">
                             <Box display="flex" flexDirection="column" gap="1rem">
                                 <Typography fontFamily="Gilroy-Bold">Site Map</Typography>
                                 <Link href="/">Home</Link>
@@ -121,8 +133,8 @@ export default function Layout({ children }: Props) {
                                 <Link href="/">Twitter</Link>
                             </Box>
                         </Box>
-                        <Box>
-                            <Typography>Sign Up for our Newsletter</Typography>
+                        <Box display="flex" flexDirection="column" gap="1rem" >
+                            <Typography fontSize={["2rem"]}>Sign Up for our Newsletter</Typography>
                             <TextField
                                 variant="standard"
                                 placeholder="Enter your email"
@@ -135,10 +147,10 @@ export default function Layout({ children }: Props) {
                             />
                         </Box>
                     </Box>
-                    <Box display="flex" justifyContent={"space-between"}>
-                        <Typography>bostonurbanacademu2021@gmail.com</Typography>
-                        <Typography>(123) XXX-XXXX</Typography>
-                        <Typography>© 2022 BUA. All rights reserved.</Typography>
+                    <Box display="flex" flexDirection={["column", "row"]} justifyContent={"space-between"}>
+                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >bostonurbanacademu2021@gmail.com</Typography>
+                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >(123) XXX-XXXX</Typography>
+                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >© 2022 BUA. All rights reserved.</Typography>
                     </Box>
                 </Box>
             </footer>

@@ -11,23 +11,35 @@ export default function Contact() {
                 position="relative"
                 overflow="hidden"
             >
-                <Box position="absolute" top="0" width={"100%"} overflow="hidden">
+                <Box position="absolute" top="0" width={"100%"} display={["block", "none"]}>
                     <img
                         src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680468921/Boston%20Academy/Frame_5168_scjc7b.svg"
                         alt={`Background graphic`}
                         style={{
                             margin: 0,
                             objectFit: "cover",
-                            width: "100%"
+                            height: "100%"
+                        }}
+                    />
+                </Box>
+
+                <Box position="absolute" top="0" width={"100%"} display={["none", "block"]}>
+                    <img
+                        src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680468921/Boston%20Academy/Frame_5168_scjc7b.svg"
+                        alt={`Background graphic`}
+                        style={{
+                            margin: 0,
+                            objectFit: "cover",
+                            width: "100%",
                         }}
 
                     />
                 </Box>
 
-                <Box position="relative" display="flex" flexDirection="row" alignItems="center" padding={["1rem", "6rem"]}>
+                <Box position="relative" display="flex" flexDirection="row" alignItems="center" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]}>
                     <Typography variant="h2">Contact</Typography>
                 </Box>
-                <Box position="relative" sx={{ backgroundColor: "#F0AD00" }} display="grid" gridTemplateColumns="2fr 3fr" p="6rem" gap="4rem">
+                <Box position="relative" sx={{ backgroundColor: "#F0AD00" }} display="grid" gridTemplateColumns={["1fr", "1fr", "2fr 3fr"]} p={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]}gap="4rem">
                     <Box display={"flex"} flexDirection="column" gap="2rem">
                         <Typography fontSize="3rem" lineHeight="100%">Speak to one <br />of us</Typography>
                         <Box>
@@ -52,7 +64,11 @@ export default function Contact() {
                     </Box>
                     <Box display={"flex"} flexDirection="column" gap="2rem">
                         <Box display="grid" gridTemplateColumns="1fr 1fr" gap="1rem">
-                            <TextField placeholder='First Name' name="firstName" />
+                            <TextField placeholder='First Name' name="firstName" sx={{
+                                "&.MuiTextField": {
+                                    backgroundColor: "white"
+                                }
+                                }} />
                             <TextField placeholder='Last Name' name="lastName" />
                         </Box>
                         <TextField placeholder='Email Address' name="email" />
@@ -86,25 +102,21 @@ export default function Contact() {
                     />
                 </Box>
 
-                <Box position="relative" display="grid" gridTemplateColumns="3fr 2fr" gap="4rem" alignItems="center" padding={["1rem", "6rem"]}>
-                    <Box borderRadius="8rem 8rem 0 0" sx={{ backgroundColor: "#F0AD00" }} position="relative" width="40rem" height="35rem">
+                <Box position="relative" display="grid" gridTemplateColumns={["1fr", '1fr', "3fr 2fr"]} gap="4rem" alignContent="center" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]}>
+                    <Box width={["100%", "30rem", "40rem"]} overflow="hidden" border="1px solid red">
                         <Image
-                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680541371/Boston%20Academy/girl_izrps8.png"
+                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680558082/Boston%20Academy/Group_5118_vt9d5o.png"
                             alt={`Young african american boy writing`}
                             layout={"responsive"}
                             style={{
                                 margin: 0,
-                                position: "absolute",
-                                top: "-5%",
-                                left: "-5%",
-                                width: "100%"
                             }}
                             width={0}
                             height={0}
                             priority={true}
                         />
                     </Box>
-                    <Box width="22rem" display={"flex"} flexDirection="column" gap="1rem">
+                    <Box width={["100%", "22rem"]} display={"flex"} flexDirection="column" gap="1rem">
                         <Typography variant="h2" color="#0E4D65">INVEST IN <br />THE DREAM</Typography>
                         <Typography color="black">Our methodology teaches the whole child. Educators reflective of students and families served</Typography>
                         <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap="1rem">
