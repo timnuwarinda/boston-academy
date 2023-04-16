@@ -66,15 +66,41 @@ export default function Contact() {
                         </Box>
                         <Box display={"flex"} flexDirection="column" gap="2rem">
                             <Box display="grid" gridTemplateColumns="1fr 1fr" gap="1rem">
-                                <TextField placeholder='First Name' name="firstName" sx={{
-                                    "&.MuiTextField": {
-                                        backgroundColor: "white"
-                                    }
-                                }} />
-                                <TextField placeholder='Last Name' name="lastName" />
+                                <TextField
+                                    placeholder='First Name'
+                                    name="firstName"
+                                    sx={{
+                                        backgroundColor: "white",
+                                        borderRadius: "0.25rem"
+                                    }}
+                                />
+                                <TextField
+                                    placeholder='Last Name'
+                                    name="lastName"
+                                    sx={{
+                                        backgroundColor: "white",
+                                        borderRadius: "0.25rem"
+                                    }}
+                                />
                             </Box>
-                            <TextField placeholder='Email Address' name="email" />
-                            <TextField placeholder='Your message' name="message" multiline={true} rows={6} />
+                            <TextField
+                                placeholder='Email Address'
+                                name="email"
+                                sx={{
+                                    backgroundColor: "white",
+                                    borderRadius: "0.25rem"
+                                }}
+                            />
+                            <TextField
+                                placeholder='Your message'
+                                name="message"
+                                multiline={true}
+                                rows={6}
+                                sx={{
+                                    backgroundColor: "white",
+                                    borderRadius: "0.25rem"
+                                }}
+                            />
                             <FormControlLabel control={<Switch defaultChecked />} label="I agree to the Terms and Conditions" />
                             <Button variant="contained" sx={{
                                 backgroundColor: "#0E4D65",

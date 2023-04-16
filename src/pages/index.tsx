@@ -5,14 +5,15 @@ import styles from '@/styles/Home.module.css'
 import { Box, Button, Typography } from '@mui/material'
 import { SouthEast } from '@mui/icons-material'
 import Layout from '@/components/Layout'
+import { Router, useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function BoardMember() {
+function BoardMember({image}: any) {
   return (
     <Box display={"flex"} alignItems="flex-end" width={["100%", "100%", "100%", "25rem"]} sx={{ aspectRatio: "3/4", backgroundColor: "#f0ad00", borderRadius: "20rem 20rem 0 0" }}>
       <Image
-        src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439404/Boston%20Academy/Subject_5_1_uwdmog.png"
+        src={image}
         alt={`Young african american boy writing`}
         layout={"responsive"}
         style={{
@@ -27,6 +28,7 @@ function BoardMember() {
 }
 
 export default function Home() {
+  const router = useRouter()
   return (
     <Layout>
       <Box sx={{ backgroundColor: "white" }}>
@@ -189,12 +191,18 @@ export default function Home() {
           </Box>
           <Box display="flex" flexDirection={["column", "column", "row-reverse"]} alignItems={"flex-end"} justifyContent={"space-between"} gap="2rem">
             <Box display="flex" flexDirection={["column", "row"]} justifyContent={["flex-start", "flex-end"]} gap="3rem" width="100%">
-              <BoardMember />
-              <BoardMember />
+              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439404/Boston%20Academy/Subject_5_1_uwdmog.png" />
+              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439416/Boston%20Academy/Subject_5_1-1_h2kjvx.png" />
             </Box>
             <Box display="flex" flexDirection="column" >
-              <SouthEast />
-              <Button variant="text" sx={{ width: "fit-content" }}>Learn More</Button>
+              <SouthEast fontFamily="large" />
+              <Button
+                variant="text"
+                sx={{ width: "fit-content", color: "white", whiteSpace: "nowrap" }}
+                onClick={() => router.push("/board")}
+              >
+                Learn More
+              </Button>
             </Box>
           </Box>
         </Box>
