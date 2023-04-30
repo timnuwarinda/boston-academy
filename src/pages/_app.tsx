@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import { ThemeProvider, CssBaseline, createTheme, Typography } from '@mui/material';
+import { ThemeProvider, CssBaseline, createTheme, Typography, Box } from '@mui/material';
 import createEmotionCache from '@/utility/createEmotionCache';
 import lightThemeOptions from '@/styles/theme/lightThemeOptions';
 
@@ -12,6 +12,7 @@ import lightThemeOptions from '@/styles/theme/lightThemeOptions';
 import "../styles/globals.css"
 import Layout from '@/components/Layout';
 import { Router } from 'next/router';
+import Image from 'next/image';
 
 
 interface MyAppProps extends AppProps {
@@ -49,9 +50,26 @@ const MyApp: React.FunctionComponent<MyAppProps> = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
-          {
-            loading ? <Typography>Loading...</Typography> : <Component {...pageProps} />
-          }
+        {
+          loading ? (
+            <Box width="100vw" height="100vh" overflow="hidden" display="flex" alignItems={"center"} justifyContent="center" sx={{backgroundColor: "#0e4d65"}}>
+              <Box width="16rem">
+              <Image
+                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
+                alt={`BUA logo`}
+                layout={"responsive"}
+                style={{
+                  marginTop: "auto",
+                  marginBottom: "auto",
+                }}
+                width={0}
+                height={0}
+                priority={true}
+              />
+              </Box>
+            </Box>
+          ) : <Component {...pageProps} />
+        }
       </ThemeProvider>
     </CacheProvider>
   );
