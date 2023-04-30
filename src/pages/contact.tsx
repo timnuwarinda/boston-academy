@@ -1,12 +1,80 @@
 import Layout from '@/components/Layout'
-import { Button, FormControlLabel, Switch, TextField, Typography } from '@mui/material'
+import { Alert, Button, FormControlLabel, Snackbar, Switch, TextField, Typography } from '@mui/material'
 import { borderRadius, Box } from '@mui/system'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+// import { LoginAsync, SignupAsync } from '../redux/slices/authSlice';
+import { yupResolver } from "@hookform/resolvers/yup"
+import { useForm } from "react-hook-form"
+import * as yup from "yup"
+
+
+type FormValues = {
+    firstName: string;
+    lastName: string;
+    email: string;
+    message: string;
+};
+
+const formSchema = yup.object().shape({
+
+})
+
 
 export default function Contact() {
+    const { handleSubmit, register, reset, control, setValue, getValues, watch, trigger } = useForm<FormValues>({
+        defaultValues: {
+
+        },
+        mode: "onChange",
+        reValidateMode: "onChange",
+        resolver: yupResolver(formSchema)
+
+    })
+
+    const [open, setOpen] = useState(false)
+
+
+    async function onSubmit(data: any) {
+        console.log(data)
+        try {
+            fetch(`${process.env.HOST}/api/sendMessage`, {
+                method: "POST",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }
+            )
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    setOpen(true)
+                    reset()
+
+                    setTimeout(() => setOpen(false), 5000)
+                })
+        } catch (error) {
+            console.log(error)
+            // error(error.message)
+        }
+    }
+
     return (
         <Layout>
+            <Snackbar
+                open={open}
+                autoHideDuration={6000}
+                // onClose={handleClose}
+                anchorOrigin={{ vertical: "top", horizontal: "center" }}
+            >
+                <Alert
+                    // onClose={handleClose}
+                    severity="success" sx={{ width: '100%' }}>
+                    Your message has been delivered successfully
+                </Alert>
+            </Snackbar>
             <Box sx={{ backgroundColor: "#0e4d65" }}>
                 <Box
                     width="100vw"
@@ -65,50 +133,69 @@ export default function Contact() {
                             </Box>
                         </Box>
                         <Box display={"flex"} flexDirection="column" gap="2rem">
-                            <Box display="grid" gridTemplateColumns="1fr 1fr" gap="1rem">
+                            <form
+                                onSubmit={handleSubmit(onSubmit)}
+                                id="contact-form"
+                            >
+                                                        <Box display={"flex"} flexDirection="column" gap="2rem">
+                                <Box display="grid" gridTemplateColumns="1fr 1fr" gap="1rem">
+                                    <TextField
+                                        placeholder='First Name'
+                                        // name="firstName"
+                                        {...register("firstName")}
+                                        sx={{
+                                            backgroundColor: "white",
+                                            borderRadius: "0.25rem"
+                                        }}
+                                    />
+                                    <TextField
+                                        placeholder='Last Name'
+                                        // name="lastName"
+                                        {...register("lastName")}
+                                        sx={{
+                                            backgroundColor: "white",
+                                            borderRadius: "0.25rem"
+                                        }}
+                                    />
+                                </Box>
                                 <TextField
-                                    placeholder='First Name'
-                                    name="firstName"
+                                    placeholder='Email Address'
+                                    // name="email"
+                                    {...register("email")}
                                     sx={{
                                         backgroundColor: "white",
                                         borderRadius: "0.25rem"
                                     }}
                                 />
                                 <TextField
-                                    placeholder='Last Name'
-                                    name="lastName"
+                                    placeholder='Your message'
+                                    // name="message"
+                                    {...register("message")}
+                                    multiline={true}
+                                    rows={6}
                                     sx={{
                                         backgroundColor: "white",
                                         borderRadius: "0.25rem"
                                     }}
                                 />
-                            </Box>
-                            <TextField
-                                placeholder='Email Address'
-                                name="email"
+                                </Box>
+                            </form>
+                            {/* <FormControlLabel control={<Switch defaultChecked />} label="I agree to the Terms and Conditions" /> */}
+                            <Button
+                                variant="contained"
                                 sx={{
-                                    backgroundColor: "white",
-                                    borderRadius: "0.25rem"
+                                    backgroundColor: "#0E4D65",
+                                    borderRadius: "0",
+                                    fontFamily: "Gilroy-Bold",
+                                    textTransform: "capitalize"
                                 }}
-                            />
-                            <TextField
-                                placeholder='Your message'
-                                name="message"
-                                multiline={true}
-                                rows={6}
-                                sx={{
-                                    backgroundColor: "white",
-                                    borderRadius: "0.25rem"
-                                }}
-                            />
-                            <FormControlLabel control={<Switch defaultChecked />} label="I agree to the Terms and Conditions" />
-                            <Button variant="contained" sx={{
-                                backgroundColor: "#0E4D65",
-                                borderRadius: "0",
-                                fontFamily: "Gilroy-Bold",
-                                textTransform: "capitalize"
-                            }}>Submit</Button>
+                                type="submit"
+                                form="contact-form"
+                            >
+                                Submit
+                            </Button>
                         </Box>
+
                     </Box>
                 </Box>
                 <Box

@@ -269,7 +269,7 @@ export default function About() {
 
                     <Box width={["100%", "30rem", "50rem"]} marginX={"auto"}>
                         <Image
-                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680495458/Boston%20Academy/Group_5202_yhbubb.svg"
+                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1682695999/Boston%20Academy/chart_jmblel.svg"
                             alt={`Young african american boy writing`}
                             layout={"responsive"}
                             style={{

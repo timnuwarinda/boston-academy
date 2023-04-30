@@ -191,8 +191,8 @@ export default function Home() {
           </Box>
           <Box display="flex" flexDirection={["column", "column", "row-reverse"]} alignItems={"flex-end"} justifyContent={"space-between"} gap="2rem">
             <Box display="flex" flexDirection={["column", "row"]} justifyContent={["flex-start", "flex-end"]} gap="3rem" width="100%">
-              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439404/Boston%20Academy/Subject_5_1_uwdmog.png" />
-              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439416/Boston%20Academy/Subject_5_1-1_h2kjvx.png" />
+              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_86_l2anmk.png" />
+              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582763/Boston%20Academy/Rectangle_82_umxsiq.png" />
             </Box>
             <Box display="flex" flexDirection="column" >
               <SouthEast fontFamily="large" />

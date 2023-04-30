@@ -5,6 +5,7 @@ import { useIsomorphicLayoutEffect } from "framer-motion";
 import Head from "next/head"
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { ReactNode, useEffect, useRef, useState } from "react"
 import NavDrawer from "./Drawer";
 
@@ -16,6 +17,7 @@ interface Props {
 
 export default function Layout({ children }: Props) {
     const navRef: any = useRef(null)
+    const router = useRouter()
 
     const [navHeight, setNavHeight] = useState(0)
 
@@ -169,8 +171,22 @@ export default function Layout({ children }: Props) {
                         </Box>
                     </Box>
                     <Box display="flex" flexDirection={["column", "row"]} justifyContent={"space-between"}>
-                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >bostonurbanacademu2021@gmail.com</Typography>
-                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >(123) XXX-XXXX</Typography>
+                        <Typography
+                            fontSize={["0.75rem", "0.875rem"]}
+                            color="white"
+                            sx={{cursor: "pointer"}}
+                            onClick={() => router.push("mailto:info@bostonurbanacademy.org")}
+                        >
+                            info@bostonurbanacademy.org
+                        </Typography>
+                        <Typography
+                            fontSize={["0.75rem", "0.875rem"]}
+                            color="white"
+                            sx={{cursor: "pointer"}}
+                            onClick={() => router.push("tel:+18577195299")}
+                        >
+                            +1-857-719-5299
+                        </Typography>
                         <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >© 2022 BUA. All rights reserved.</Typography>
                     </Box>
                 </Box>
