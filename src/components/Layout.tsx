@@ -86,7 +86,7 @@ export default function Layout({ children }: Props) {
                     </Box>
                 </Box>
             </nav>
-            <main style={{ paddingTop: navHeight }}>
+            <main style={{ paddingTop: navHeight, color: "white" }}>
                 {children}
             </main>
             <footer style={{ width: "100%", }}>

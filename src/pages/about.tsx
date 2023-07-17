@@ -75,7 +75,9 @@ export default function About() {
                         </Box>
 
                         <Box sx={{ backgroundColor: "white" }} position="absolute" bottom={0} width="100%" padding="1rem">
-                            <Typography color="black" width={["100%", "50rem"]} textAlign={"center"} fontSize={["1rem", "1.25rem"]} mx="auto">BUA will begin with one grade – K0 and serve three-year old students. Subsequently, each year a grade will be added until BUA is a K-Grade 6 elementary school.</Typography>
+                            <Typography color="black" width={["100%", "50rem"]} textAlign={"center"} fontSize={["1rem", "1.25rem"]} mx="auto">
+                                BUA will launch as a PreK school and add an additional grade each year until we reach our full design up to grade six (6). We will manage our growth incrementally and apply new learnings along the way to assure excellent outcomes and sustainability.
+                            </Typography>
                         </Box>
                     </Box>
 
@@ -87,7 +89,9 @@ export default function About() {
                             <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                             <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Our Mission</Typography>
                         </Box>
-                        <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>Boston Urban Academy, an independent, elementary school offers families a choice for high quality, public school education</Typography>
+                        <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
+                            Boston Urban Academy provides a tuition free, high quality, and innovative education to young children living in under-resourced Boston neighborhoods. Our students love learning, think critically and know their worth.
+                        </Typography>
                     </Box>
                     <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap={["1rem", "4rem"]}>
                         <Box>
@@ -161,8 +165,7 @@ export default function About() {
                                 </Box>
                                 <Typography variant="h3" color="#F0AD00" fontSize={["2rem"]}>Collaborative</Typography>
                                 <Typography maxWidth={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]}>
-                                    We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
-                                    The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
+                                    Teachers, staff, and families collaborate to ensure academic achievement for each student. Our inclusive approach allows students to work in developmentally appropriate teams to solve real problems together.
                                 </Typography>
                             </Box>
 
@@ -180,8 +183,7 @@ export default function About() {
                                 </Box>
                                 <Typography variant="h3" color="#F0AD00" fontSize={["2rem"]}>Caring</Typography>
                                 <Typography maxWidth={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]}>
-                                    We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
-                                    The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
+                                    We respect our students. We celebrate their cultures and family traditions. We care deeply for the students and their families. We value our students and their contributions in the instructional setting. We believe in our students.
                                 </Typography>
                             </Box>
 

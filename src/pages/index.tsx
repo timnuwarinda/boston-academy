@@ -9,7 +9,7 @@ import { Router, useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function BoardMember({image}: any) {
+function BoardMember({ image }: any) {
   return (
     <Box display={"flex"} alignItems="flex-end" width={["100%", "100%", "100%", "25rem"]} sx={{ aspectRatio: "3/4", backgroundColor: "#f0ad00", borderRadius: "20rem 20rem 0 0" }}>
       <Image
@@ -104,7 +104,7 @@ export default function Home() {
                 maxWidth="25rem"
                 fontSize={["1rem", "1.25rem"]}
               >
-                Boston urban academy is an independent, elementary school that produces inquisitive students
+                Vision: Boston Urban Academy teaches children to reach their highest potential and to substantially contribute to society.
               </Typography>
             </Box>
             <Button variant="contained" sx={{ width: "fit-content" }}>
@@ -149,10 +149,15 @@ export default function Home() {
               // objectFit="cover"
               />
             </Box>
-            <Box width={["100%", "30rem"]} display="flex" flexDirection="column" gap={["1rem", "2rem"]}>
+            <Box width={["100%", "40rem"]} display="flex" flexDirection="column" gap={["1rem", "2rem"]}>
               <Box>
                 <Typography variant="h2" fontSize={["3rem",]} color="black"><span style={{ color: "#f0ad00" }}>ABOUT</span> US</Typography>
-                <Typography color="black" fontSize={["1rem", "1.25rem"]}>Boston Urban Academy was founded to enable students in under-resourced Boston neighborhoods to reach their highest potential. Sherry Brooks-Roberts transformed her dream into a reality by utilizing her 35 years as an elementary school educator, administrator and change agent.</Typography>
+                <Typography color="black" fontSize={["1rem", "1.25rem"]}>
+                  Boston Urban Academy (BUA)  is an independent, non-profit, elementary school. BUA will be located in the heart of Boston to educate students in low-socioeconomic households. Our comprehensive curriculum prepares students for lifelong critical thinking and innovation.
+                  <br />
+                  <br />
+                  BUA’s  guiding principles are the Nguzo Saba (Swahili for seven principles). These principles recognize the challenges of growing up Black/Brown in a racialized society and reinforce aspects of African culture to strengthen self-worth and dignity. Students receive an excellent education that addresses the whole child; mind, heart, body and soul. Thanks to an outstanding, diverse faculty and staff, students’ lives are transformed as they are exposed to a wide range of possibilities for their future.
+                </Typography>
               </Box>
               <Button variant="contained" sx={{ width: "fit-content" }}>Learn More</Button>
             </Box>
@@ -187,7 +192,7 @@ export default function Home() {
         <Box sx={{ backgroundColor: "#0e4d65" }} padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} display="flex" flexDirection="column" gap="6rem">
           <Box display="flex" flexDirection={["column", "column", "column", "row"]} justifyContent={"space-between"} gap="1rem">
             <Typography variant="h3" fontFamily="Gilroy-Bold" color="white" lineHeight="100%">Board<br />of Directors</Typography>
-            <Typography width={["100%", "30rem", "40rem"]} variant="body1" color="white" fontSize={["1rem", "1.25rem"]}>The Boston Urban Academy board is composed of highly-credentialed local professionals partnering to create a learning environment that encourages critical tinkering and a love of learning through the NGUZA SABA; the 7 principles of Kwanzaa</Typography>
+            <Typography width={["100%", "30rem", "40rem"]} variant="body1" color="white" fontSize={["1rem", "1.25rem"]}>The Boston Urban Academy board is composed of highly-credentialed local professionals partnering to create a learning environment that encourages critical tinkering and a love of learning through the NGUZO SABA; the 7 principles of Kwanzaa</Typography>
           </Box>
           <Box display="flex" flexDirection={["column", "column", "row-reverse"]} alignItems={"flex-end"} justifyContent={"space-between"} gap="2rem">
             <Box display="flex" flexDirection={["column", "row"]} justifyContent={["flex-start", "flex-end"]} gap="3rem" width="100%">
