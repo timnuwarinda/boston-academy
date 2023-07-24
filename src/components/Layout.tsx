@@ -165,7 +165,7 @@ export default function Layout({ children }: Props) {
                                 variant="standard"
                                 placeholder="Enter your email"
                                 sx={{
-                                    "&.MuiTextField-root": {
+                                    "& .MuiInputBase-input": {
                                         color: "white",
                                         borderColor: "white"
                                     }

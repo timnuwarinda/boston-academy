@@ -128,7 +128,7 @@ export default function Board() {
                         </Box>
                         <Box display={["none", "block"]}>
                             <Image
-                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680537649/Boston%20Academy/chairperson_oiiqpj.png"
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690205761/Boston%20Academy/boy-doing-occupational-therapy-session_glxw6g.jpg"
                                 alt={`Young african american boy writing`}
                                 layout={"responsive"}
                                 style={{
@@ -141,7 +141,7 @@ export default function Board() {
                         </Box>
                         <Box display={["block", "none"]}>
                             <Image
-                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680557006/Boston%20Academy/Rectangle_103_y09mwt.png"
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690205761/Boston%20Academy/boy-doing-occupational-therapy-session_glxw6g.jpg"
                                 alt={`Young african american boy writing`}
                                 layout={"responsive"}
                                 style={{

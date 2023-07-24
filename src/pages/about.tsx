@@ -312,7 +312,7 @@ export default function About() {
                             priority={true}
                         />
                     </Box>
-                    <Box display="flex" flexDirection={["column", "column", "row"]} gap="3rem" justifyContent={"space-between"} padding={["4rem 1rem", "6rem"]}>
+                    {/* <Box display="flex" flexDirection={["column", "column", "row"]} gap="3rem" justifyContent={"space-between"} padding={["4rem 1rem", "6rem"]}>
                         <Box display={"flex"} flexDirection="column" alignItems={"center"}>
                             <Typography fontSize={["4rem", "4rem", "4rem", "6rem"]} color="#0E4D65" lineHeight="100%">30+</Typography>
                             <Typography color="black" fontSize={["1.25rem", "1.25rem", "1.25rem", "1.5rem"]}>Projects</Typography>
@@ -325,84 +325,61 @@ export default function About() {
                             <Typography fontSize={["4rem", "4rem", "4rem", "6rem"]} color="#0E4D65" lineHeight="100%">10 Years</Typography>
                             <Typography color="black" fontSize={["1.25rem", "1.25rem", "1.25rem", "1.5rem"]}>Of Changing Lives</Typography>
                         </Box>
+                    </Box> */}
+
+                    <Box display="flex" flexDirection={["column", "column", "row"]} gap="3rem" justifyContent={"space-between"} padding={["4rem 1rem", "6rem"]}>
+                        <Box display={"flex"} flexDirection="column" alignItems={"center"}>
+                            <Typography fontSize={["4rem", "4rem", "4rem", "6rem"]} color="#0E4D65" lineHeight="100%">36</Typography>
+                            <Typography color="black" fontSize={["1.25rem", "1.25rem", "1.25rem", "1.5rem"]} textAlign="center">
+                                Years teaching and administrative experience
+                            </Typography>
+                        </Box>
+                        <Box display={"flex"} flexDirection="column" alignItems={"center"}>
+                            <Typography fontSize={["4rem", "4rem", "4rem", "6rem"]} color="#0E4D65" lineHeight="100%">100%</Typography>
+                            <Typography color="black" fontSize={["1.25rem", "1.25rem", "1.25rem", "1.5rem"]} textAlign="center">Affordable Education</Typography>
+                        </Box>
+                        <Box display={"flex"} flexDirection="column" alignItems={"center"}>
+                            <Typography fontSize={["4rem", "4rem", "4rem", "6rem"]} color="#0E4D65" lineHeight="100%">100%</Typography>
+                            <Typography color="black" fontSize={["1.25rem", "1.25rem", "1.25rem", "1.5rem"]} textAlign="center">
+                                Serving variety of student body, teachers and staff
+                            </Typography>
+                        </Box>
                     </Box>
 
-                    <Box padding={["4rem 1rem", "6rem"]} display="flex" flexDirection="column" gap="2rem">
+                    <Box padding={["4rem 1rem", "6rem"]} display="flex" flexDirection="column" alignItems="center" gap="2rem">
                         <Box display={"flex"} alignItems="center" gap="0.5rem">
                             <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                             <Typography fontSize="2rem" fontFamily="Gilroy-Bold" color="#3C3C3C">Our Partners</Typography>
                         </Box>
-                        <Box display={"flex"} width='100%' gap="4rem">
-                            <Box width={["6rem", "6rem"]}>
+                        <Box display={["column", "flex"]} justifyContent="center" alignItems="center" width='100%' gap="4rem">
+                            <Box width={["8rem"]} mx="auto">
                                 <Image
-                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500005/Boston%20Academy/WTR_1000_2021_recommended_firm_signature_0_1_tgzsl4.png"
+                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690206716/Boston%20Academy/hk_opengraph_r42uyl.webp"
                                     alt={`Young african american boy writing`}
-                                    style={{
-                                        margin: 0,
-                                    }}
                                     width={0}
                                     height={0}
                                     priority={true}
+                                    layout={"responsive"}
                                 />
                             </Box>
-                            <Box height={["3rem", "6rem"]}>
+                            <Box width={["8rem"]} mx="auto">
                                 <Image
-                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500006/Boston%20Academy/MYVptHf6_400x400_1_c6rena.png"
+                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690206716/Boston%20Academy/1_STEMUPDATED3_a6s0kc.png"
                                     alt={`Young african american boy writing`}
-                                    style={{
-                                        margin: 0,
-                                    }}
                                     width={0}
                                     height={0}
                                     priority={true}
+                                    layout={"responsive"}
                                 />
                             </Box>
-                            <Box height={["3rem", "6rem"]}>
+                            <Box width={["8rem"]} mx="auto">
                                 <Image
-                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500004/Boston%20Academy/African-legal-Awards-2020_1_qpbuze.png"
+                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690206717/Boston%20Academy/EnCompass4CornersLogoSquare1500ppi_z9lndm.jpg"
                                     alt={`Young african american boy writing`}
-                                    style={{
-                                        margin: 0,
-                                    }}
                                     width={0}
                                     height={0}
                                     priority={true}
-                                />
-                            </Box>
-                            <Box height={["3rem", "6rem"]}>
-                                <Image
-                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500005/Boston%20Academy/WTR_1000_2021_recommended_firm_signature_0_1_tgzsl4.png"
-                                    alt={`Young african american boy writing`}
-                                    style={{
-                                        margin: 0,
-                                    }}
-                                    width={0}
-                                    height={0}
-                                    priority={true}
-                                />
-                            </Box>
-                            <Box height={["3rem", "6rem"]}>
-                                <Image
-                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500006/Boston%20Academy/MYVptHf6_400x400_1_c6rena.png"
-                                    alt={`Young african american boy writing`}
-                                    style={{
-                                        margin: 0,
-                                    }}
-                                    width={0}
-                                    height={0}
-                                    priority={true}
-                                />
-                            </Box>
-                            <Box height={["3rem", "6rem"]}>
-                                <Image
-                                    src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680500004/Boston%20Academy/African-legal-Awards-2020_1_qpbuze.png"
-                                    alt={`Young african american boy writing`}
-                                    style={{
-                                        margin: 0,
-                                    }}
-                                    width={0}
-                                    height={0}
-                                    priority={true}
+                                    layout={"responsive"}
                                 />
                             </Box>
                         </Box>
