@@ -9,20 +9,27 @@ import { Router, useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function BoardMember({ image }: any) {
+function BoardMember({ image, name }: any) {
   return (
-    <Box display={"flex"} alignItems="flex-end" width={["100%", "100%", "100%", "25rem"]} sx={{ aspectRatio: "3/4", backgroundColor: "#f0ad00", borderRadius: "20rem 20rem 0 0" }}>
-      <Image
-        src={image}
-        alt={`Young african american boy writing`}
-        layout={"responsive"}
-        style={{
-          margin: 0,
-        }}
-        width={0}
-        height={0}
-        priority={true}
-      />
+    <Box>
+      <Box display={"flex"} alignItems="flex-end" width={["100%", "100%", "100%", "25rem"]} sx={{ aspectRatio: "3/4", backgroundColor: "#f0ad00", borderRadius: "20rem 20rem 0 0" }}>
+        <Image
+          src={image}
+          alt={`Young african american boy writing`}
+          layout={"responsive"}
+          style={{
+            margin: 0,
+          }}
+          width={0}
+          height={0}
+          priority={true}
+        />
+      </Box>
+      <Box mt="0.5rem">
+        <Typography fontWeight="600" fontSize="1.25rem">
+          {name}
+        </Typography>
+      </Box>
     </Box>
   )
 }
@@ -107,7 +114,11 @@ export default function Home() {
                 Vision: Boston Urban Academy teaches children to reach their highest potential and to substantially contribute to society.
               </Typography>
             </Box>
-            <Button variant="contained" sx={{ width: "fit-content" }}>
+            <Button
+              variant="contained"
+              sx={{ width: "fit-content" }}
+              onClick={() => router.push("/about")}
+            >
               Learn More
             </Button>
           </Box>
@@ -159,7 +170,13 @@ export default function Home() {
                   BUA’s  guiding principles are the Nguzo Saba (Swahili for seven principles). These principles recognize the challenges of growing up Black/Brown in a racialized society and reinforce aspects of African culture to strengthen self-worth and dignity. Students receive an excellent education that addresses the whole child; mind, heart, body and soul. Thanks to an outstanding, diverse faculty and staff, students’ lives are transformed as they are exposed to a wide range of possibilities for their future.
                 </Typography>
               </Box>
-              <Button variant="contained" sx={{ width: "fit-content" }}>Learn More</Button>
+              <Button
+                variant="contained"
+                sx={{ width: "fit-content" }}
+                onClick={() => router.push("/about")}
+              >
+                Learn More
+              </Button>
             </Box>
           </Box>
 
@@ -196,8 +213,14 @@ export default function Home() {
           </Box>
           <Box display="flex" flexDirection={["column", "column", "row-reverse"]} alignItems={"flex-end"} justifyContent={"space-between"} gap="2rem">
             <Box display="flex" flexDirection={["column", "row"]} justifyContent={["flex-start", "flex-end"]} gap="3rem" width="100%">
-              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_86_l2anmk.png" />
-              <BoardMember image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582763/Boston%20Academy/Rectangle_82_umxsiq.png" />
+              <BoardMember
+                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690190256/Boston%20Academy/sherry_bz5opi.png"
+                name="Sherry Brooks Roberts"
+              />
+              <BoardMember
+                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582761/Boston%20Academy/Rectangle_88_pycwnc.png"
+                name="Donna Maria Cameron"
+              />
             </Box>
             <Box display="flex" flexDirection="column" >
               <SouthEast fontFamily="large" />

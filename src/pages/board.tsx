@@ -26,7 +26,7 @@ function BoardMember({ variant, name, title, image }: any) {
                     priority={true}
                 />
             </Box>
-            <Typography fontFamily={"Gilroy-Bold"} fontSize="1.5rem">{name}</Typography>
+            <Typography fontFamily={"Gilroy-Bold"} fontSize="1.5rem" mt="0.5rem">{name}</Typography>
             <Typography variant="body1" >{title}</Typography>
         </Box>
     )
@@ -50,7 +50,6 @@ export default function Board() {
                                 objectFit: "cover",
                                 height: "100%"
                             }}
-
                         />
                     </Box>
 
@@ -73,16 +72,16 @@ export default function Board() {
 
                     <Box position="relative" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} display="flex" flexDirection="column" gap="6rem" sx={{ backgroundColor: "#EF2222" }} >
                         <Box display="grid" gridTemplateColumns={["1fr", "1fr 1fr"]} gap="4rem" >
-                            <BoardMember name="Jane Doe" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_86_l2anmk.png" />
-                            <BoardMember variant="spaced" name="Jane Doe" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_87_kue8lf.png" />
+                            <BoardMember name="Sherry Brooks Roberts" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690190256/Boston%20Academy/sherry_bz5opi.png" />
+                            <BoardMember variant="spaced" name="Donna Maria Cameron" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582761/Boston%20Academy/Rectangle_88_pycwnc.png" />
+
                         </Box>
                         <Box display="grid" gridTemplateColumns={["1fr", "1fr 1fr"]} gap="4rem" >
-                            <BoardMember name="Jane Doe" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582761/Boston%20Academy/Rectangle_88_pycwnc.png"  />
-                            <BoardMember variant="spaced" name="Jane Doe" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439416/Boston%20Academy/Subject_5_1-1_h2kjvx.png" />
+                            <BoardMember name="Cheryl Harris" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_86_l2anmk.png" />
+                            <BoardMember variant="spaced" name="Charlotte (Dee) Spinkston" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582763/Boston%20Academy/Rectangle_82_umxsiq.png" />
                         </Box>
                         <Box display="grid" gridTemplateColumns={["1fr", "1fr 1fr"]} gap="4rem" >
-                            {/* <BoardMember name="Jane Doe" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680439404/Boston%20Academy/Subject_5_1_uwdmog.png" /> */}
-                            <BoardMember variant="spaced" name="Jane Doe" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582763/Boston%20Academy/Rectangle_82_umxsiq.png" />
+                            <BoardMember name="Lois Reason" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_87_kue8lf.png" />
                         </Box>
                     </Box>
 

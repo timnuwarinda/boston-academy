@@ -52,20 +52,23 @@ export default function Layout({ children }: Props) {
                 }}
             >
                 <Box display="flex" flexDirection="row" justifyContent={"space-between"} width="100%" sx={{ backgroundColor: "#0e4d65" }} padding={["1rem", "1rem 2rem", "1rem 4rem", "1rem 6rem"]}>
-                    <Box width="16rem" overflow="hidden" display="flex" alignItems={"center"}>
-                        <Image
-                            src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
-                            alt={`BUA logo`}
-                            layout={"responsive"}
-                            style={{
-                                marginTop: "auto",
-                                marginBottom: "auto",
-                            }}
-                            width={0}
-                            height={0}
-                            priority={true}
-                        />
-                    </Box>
+                    <Link href="/">
+                        <Box width="16rem" overflow="hidden" display="flex" alignItems={"center"}>
+                            <Image
+                                src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680450056/Boston%20Academy/boston-urban-academy-banner-logo_orig_1_pqaciq.png"
+                                alt={`BUA logo`}
+                                layout={"responsive"}
+                                style={{
+                                    marginTop: "auto",
+                                    marginBottom: "auto",
+                                }}
+                                width={0}
+                                height={0}
+                                priority={true}
+                            />
+                        </Box>
+                    </Link>
+
                     <Box display="flex" gap={["1rem", "3rem"]} alignItems="center">
                         <Box gap="1rem" display={["none", "none", "none", "flex"]}>
                             <Link href="/">HOME</Link>
@@ -110,11 +113,11 @@ export default function Layout({ children }: Props) {
                             <Typography fontFamily="Gilroy-Bold" fontSize={["1rem", "2rem"]}>
                                 Support the cause. Partner with us
                             </Typography>
-                            <Button variant="contained" sx={{
+                            <Button variant="contained" href="/donate" sx={{
                                 backgroundColor: "#f0ad00",
                                 padding: "0.5rem 1rem",
                                 lineHeight: "100%",
-                                height: "fit-content"
+                                height: "fit-content",
                             }}>
                                 DONATE
                             </Button>
@@ -174,7 +177,7 @@ export default function Layout({ children }: Props) {
                         <Typography
                             fontSize={["0.75rem", "0.875rem"]}
                             color="white"
-                            sx={{cursor: "pointer"}}
+                            sx={{ cursor: "pointer" }}
                             onClick={() => router.push("mailto:info@bostonurbanacademy.org")}
                         >
                             info@bostonurbanacademy.org
@@ -182,7 +185,7 @@ export default function Layout({ children }: Props) {
                         <Typography
                             fontSize={["0.75rem", "0.875rem"]}
                             color="white"
-                            sx={{cursor: "pointer"}}
+                            sx={{ cursor: "pointer" }}
                             onClick={() => router.push("tel:+18577195299")}
                         >
                             +1-857-719-5299
