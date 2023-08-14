@@ -93,7 +93,7 @@ export default function About() {
                             Boston Urban Academy provides a tuition free, high quality, and innovative education to young children living in under-resourced Boston neighborhoods. Our students love learning, think critically and know their worth.
                         </Typography> */}
                         <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
-                            "If you listen and observe children, they will teach you how to teach them." - Jawanza Kunjufu
+                        &quot;If you listen and observe children, they will teach you how to teach them.&quot; - Jawanza Kunjufu
                         </Typography>
                     </Box>
                     <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap={["1rem", "4rem"]}>
