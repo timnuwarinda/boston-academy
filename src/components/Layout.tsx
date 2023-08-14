@@ -115,9 +115,10 @@ export default function Layout({ children }: Props) {
                             </Typography>
                             <Button variant="contained" href="/donate" sx={{
                                 backgroundColor: "#f0ad00",
-                                padding: "0.5rem 1rem",
+                                padding: "1rem",
                                 lineHeight: "100%",
                                 height: "fit-content",
+                                fontWeight: 700
                             }}>
                                 DONATE
                             </Button>
