@@ -244,7 +244,7 @@ export default function Contact() {
                         </Box>
                         <Box width={["100%"]} maxWidth={["30rem", "40rem"]} mx={['0', 'auto']} display={"flex"} flexDirection="column" alignItems={["flex-start", "center", "center", "flex-start"]} gap="1rem">
                             <Typography variant="h2" color="#0E4D65" fontSize={["2rem", "4rem"]} textAlign={["left", "center", "center", "left"]}>INVEST IN <br />THE DREAM</Typography>
-                            <Typography color="black" fontSize={["1rem", "1.25rem"]} textAlign={["left", "center", "center", "left"]}>Our methodology teaches the whole child. Educators reflective of students and families served</Typography>
+                            <Typography color="black" fontSize={["1rem", "1.25rem"]} textAlign={["left", "center", "center", "left"]}>Our methodology teaches the whole child. Educators are reflective of students and families served</Typography>
                             <Box display={"grid"} width="100%" maxWidth={["30rem"]} gridTemplateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]} gap="1rem">
                                 <Button
                                     variant="contained"

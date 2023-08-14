@@ -4,7 +4,7 @@ import { Box } from "@mui/system"
 import Image from "next/image"
 import React from "react"
 
-function BoardMember({ variant, name, title, image }: any) {
+function BoardMember({ variant, name, title, image, about }: any) {
     return (
         <Box sx={{
             letterSpacing: 0,
@@ -27,7 +27,8 @@ function BoardMember({ variant, name, title, image }: any) {
                 />
             </Box>
             <Typography fontFamily={"Gilroy-Bold"} fontSize="1.5rem" mt="0.5rem">{name}</Typography>
-            <Typography variant="body1" >{title}</Typography>
+            {/* <Typography variant="body1" >{title}</Typography> */}
+            <Typography variant="body1" >{about}</Typography>
         </Box>
     )
 }
@@ -72,16 +73,43 @@ export default function Board() {
 
                     <Box position="relative" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} display="flex" flexDirection="column" gap="6rem" sx={{ backgroundColor: "#EF2222" }} >
                         <Box display="grid" gridTemplateColumns={["1fr", "1fr 1fr"]} gap="4rem" >
-                            <BoardMember name="Sherry Brooks Roberts" title="Board Chairperson" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690190256/Boston%20Academy/sherry_bz5opi.png" />
-                            <BoardMember variant="spaced" name="Donna Maria Cameron" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582761/Boston%20Academy/Rectangle_88_pycwnc.png" />
+                            <BoardMember
+                                name="Sherry Brooks Roberts"
+                                title="Board Chairperson"
+                                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1690190256/Boston%20Academy/sherry_bz5opi.png"
+                                about="Educator with 37 years of experience as a teacher and administrator."
+                            />
+                            <BoardMember
+                                variant="spaced"
+                                name="Donna Maria Cameron"
+                                title="Board Member"
+                                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582761/Boston%20Academy/Rectangle_88_pycwnc.png"
+                                about="Educator with 25 years of experience as a founder of an alternative school, teacher, and administrator."
+                            />
 
                         </Box>
                         <Box display="grid" gridTemplateColumns={["1fr", "1fr 1fr"]} gap="4rem" >
-                            <BoardMember name="Cheryl Harris" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_86_l2anmk.png" />
-                            <BoardMember variant="spaced" name="Charlotte (Dee) Spinkston" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582763/Boston%20Academy/Rectangle_82_umxsiq.png" />
+                            <BoardMember
+                                name="Cheryl Harris"
+                                title="Board Member"
+                                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_86_l2anmk.png"
+                                about="Ordained American Baptist minister, business owner and author with 30 years of professional experience."
+                            />
+                            <BoardMember
+                                variant="spaced"
+                                name="Charlotte (Dee) Spinkston"
+                                title="Board Member"
+                                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582763/Boston%20Academy/Rectangle_82_umxsiq.png"
+                                about="Consultant, trainer, coach, facilitator, DEI family engagement and disability professional and ASL interpreter."
+                            />
                         </Box>
                         <Box display="grid" gridTemplateColumns={["1fr", "1fr 1fr"]} gap="4rem" >
-                            <BoardMember name="Lois Reason" title="Board Member" image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_87_kue8lf.png" />
+                            <BoardMember
+                                name="Lois Reason"
+                                title="Board Member"
+                                image="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1681582759/Boston%20Academy/Rectangle_87_kue8lf.png"
+                                about="Founder and President of Rise and Shine Contract Cleaning Services."
+                            />
                         </Box>
                     </Box>
 
@@ -120,10 +148,7 @@ export default function Board() {
                                 <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Board Statement</Typography>
                             </Box>
                             <Typography width={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]}>
-                                BUA provides young children,
-                                living in under-resourced Boston neighborhoods, a tuition free,
-                                high-quality, innovative education.
-                                Our students love learning, think critically and know their worth.
+                                “Education is for improving the lives of others and for leaving your community and world better than you found it.” - Marian Wright Edelman
                             </Typography>
                         </Box>
                         <Box display={["none", "block"]}>

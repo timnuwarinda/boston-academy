@@ -89,8 +89,11 @@ export default function About() {
                             <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                             <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Our Mission</Typography>
                         </Box>
-                        <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
+                        {/* <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
                             Boston Urban Academy provides a tuition free, high quality, and innovative education to young children living in under-resourced Boston neighborhoods. Our students love learning, think critically and know their worth.
+                        </Typography> */}
+                        <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
+                            "If you listen and observe children, they will teach you how to teach them." - Jawanza Kunjufu
                         </Typography>
                     </Box>
                     <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap={["1rem", "4rem"]}>
@@ -146,7 +149,7 @@ export default function About() {
                                 </Box>
                                 <Typography variant="h3" color="#F0AD00" fontSize={["2rem"]} width="100%">Comprehensive</Typography>
                                 <Typography maxWidth={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]}>
-                                    We provide a through, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
+                                    We provide a thorough, rigorous, expansive, curriculum. It is holistic, culturally responsive, and extends beyond standard curricula.<br />
                                     The approach to instruction is inquiry-based and all subject areas will be woven into the inquiry themes.
                                 </Typography>
                             </Box>
@@ -265,7 +268,7 @@ export default function About() {
                             <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Teaching Models</Typography>
                         </Box>
                         <Typography width={["100%", "30rem"]} fontSize={["1rem", "1.25rem"]}>
-                            The 7 principles of Kwanzaa support our values of discovery, collaboration, rigorous education, and emotional success
+                            The 7 principles of Kwanzaa support our values of discovery, collaboration, rigorous education, and emotional success.
                         </Typography>
                     </Box>
 
