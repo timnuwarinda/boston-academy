@@ -113,13 +113,18 @@ export default function Layout({ children }: Props) {
                             <Typography fontFamily="Gilroy-Bold" fontSize={["1rem", "2rem"]}>
                                 Support the cause. Partner with us
                             </Typography>
-                            <Button variant="contained" href="/donate" sx={{
-                                backgroundColor: "#f0ad00",
-                                padding: "1rem",
-                                lineHeight: "100%",
-                                height: "fit-content",
-                                fontWeight: 700
-                            }}>
+                            <Button
+                                variant="contained"
+                                // href="/donate"
+                                href="https://boston-urban-academy-64d82d2ca4f76.springly.org/collect/description/351545-m-boston-urban-academy-fundraising-campaign?iframe=1"
+                                sx={{
+                                    backgroundColor: "#f0ad00",
+                                    padding: "1rem",
+                                    lineHeight: "100%",
+                                    height: "fit-content",
+                                    fontWeight: 700
+                                }}
+                            >
                                 DONATE
                             </Button>
                         </Box>
@@ -189,7 +194,7 @@ export default function Layout({ children }: Props) {
                             sx={{ cursor: "pointer" }}
                             onClick={() => router.push("tel:+18577195299")}
                         >
-                            +1-857-719-5299
+                            Tel: +1-857-719-5299
                         </Typography>
                         <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >© 2022 BUA. All rights reserved.</Typography>
                     </Box>

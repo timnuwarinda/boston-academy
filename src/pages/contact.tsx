@@ -251,6 +251,7 @@ export default function Contact() {
                                     sx={{
                                         backgroundColor: "#EF2222"
                                     }}
+                                    href="https://boston-urban-academy-64d82d2ca4f76.springly.org/collect/description/351545-m-boston-urban-academy-fundraising-campaign?iframe=1"
                                 >
                                     Donate
                                 </Button>
@@ -259,6 +260,7 @@ export default function Contact() {
                                     sx={{
                                         backgroundColor: "#0E4D65"
                                     }}
+                                    href="https://boston-urban-academy-64d82d2ca4f76.springly.org/collect/description/351545-m-boston-urban-academy-fundraising-campaign?iframe=1"
                                 >
                                     Support
                                 </Button>
