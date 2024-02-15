@@ -209,7 +209,7 @@ export default function Home() {
         <Box sx={{ backgroundColor: "#0e4d65" }} padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} display="flex" flexDirection="column" gap="6rem">
           <Box display="flex" flexDirection={["column", "column", "column", "row"]} justifyContent={"space-between"} gap="1rem">
             <Typography variant="h3" fontFamily="Gilroy-Bold" color="white" lineHeight="100%">Board<br />of Directors</Typography>
-            <Typography width={["100%", "30rem", "40rem"]} variant="body1" color="white" fontSize={["1rem", "1.25rem"]}>The Boston Urban Academy board is composed of highly-credentialed local professionals partnering to create a learning environment that encourages critical tinkering and a love of learning through the NGUZO SABA; the 7 principles of Kwanzaa</Typography>
+            <Typography width={["100%", "30rem", "40rem"]} variant="body1" color="white" fontSize={["1rem", "1.25rem"]}>The Boston Urban Academy board is composed of highly-credentialed local professionals partnering to create a learning environment that encourages critical thinking and a love of learning through the NGUZO SABA; the 7 principles of Kwanzaa</Typography>
           </Box>
           <Box display="flex" flexDirection={["column", "column", "row-reverse"]} alignItems={"flex-end"} justifyContent={"space-between"} gap="2rem">
             <Box display="flex" flexDirection={["column", "row"]} justifyContent={["flex-start", "flex-end"]} gap="3rem" width="100%">

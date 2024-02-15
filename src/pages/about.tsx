@@ -41,7 +41,7 @@ export default function About() {
 
                     <Box display="flex" flexDirection={["column", "column", "row"]} alignItems={["flex-start", "flex-start", "center"]} justifyContent="space-between" padding={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]}>
                         <Typography variant="h2" fontSize={["3rem"]}><span style={{ color: "#f0ad00" }}>ABOUT</span> US</Typography>
-                        <Typography variant="body1" fontSize={["1rem", "1.25rem"]} width={["100%", "30rem", "30rem", "40rem"]}>Boston Urban Academy was founded to enable students in under-resourced Boston neighborhoods to reach their highest potential. Sherry Brooks-Roberts transformed her dream into a reality by utilizing her 35 years as an elementary school educator, administrator and change agent.</Typography>
+                        <Typography variant="body1" fontSize={["1rem", "1.25rem"]} width={["100%", "30rem", "30rem", "40rem"]}>Boston Urban Academy was founded to enable students in under-resourced Boston neighborhoods to reach their highest potential. Sherry Brooks-Roberts transformed her dream into a reality by utilizing her 36 years as an elementary school educator, administrator and change agent.</Typography>
                     </Box>
 
                     <Box position="relative">
@@ -84,18 +84,16 @@ export default function About() {
                 </Box>
 
                 <Box p={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} display="flex" flexDirection={"column"} gap={["2rem", "4rem", "8rem", "10rem"]}>
-                    <Box display={"grid"} gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
+                    {/* <Box display={"grid"} gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
                         <Box display={"flex"} alignItems="center" gap="0.5rem">
                             <Box height="0.5rem" width="0.5rem" sx={{ backgroundColor: "#F0AD00" }} />
                             <Typography fontSize="2rem" fontFamily="Gilroy-Bold">Our Mission</Typography>
                         </Box>
-                        {/* <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
-                            Boston Urban Academy provides a tuition free, high quality, and innovative education to young children living in under-resourced Boston neighborhoods. Our students love learning, think critically and know their worth.
-                        </Typography> */}
+
                         <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
                         &quot;If you listen and observe children, they will teach you how to teach them.&quot; - Jawanza Kunjufu
                         </Typography>
-                    </Box>
+                    </Box> */}
                     <Box display={"grid"} gridTemplateColumns="1fr 1fr" gap={["1rem", "4rem"]}>
                         <Box>
                             <Image

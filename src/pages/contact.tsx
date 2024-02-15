@@ -112,7 +112,7 @@ export default function Contact() {
                     <Box position="relative" sx={{ backgroundColor: "#F0AD00" }} display="grid" gridTemplateColumns={["1fr", "1fr", "2fr 3fr"]} p={["6rem 1rem", "6rem 2rem", "6rem 4rem", "6rem"]} gap="4rem">
                         <Box display={"flex"} flexDirection="column" gap="2rem">
                             <Typography fontSize="3rem" lineHeight="100%">Speak to one <br />of us</Typography>
-                            <Box>
+                            {/* <Box>
                                 <Image
                                     src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680538743/Boston%20Academy/map_uydfy5.png"
                                     alt={`Young african american boy writing`}
@@ -124,7 +124,7 @@ export default function Contact() {
                                     height={0}
                                     priority={true}
                                 />
-                            </Box>
+                            </Box> */}
                             <Box>
                                 <Typography fontFamily={"Gilroy-Bold"}>Address</Typography>
                                 <Typography>P.O Box 365058</Typography>
@@ -255,7 +255,7 @@ export default function Contact() {
                                 >
                                     Donate
                                 </Button>
-                                <Button
+                                {/* <Button
                                     variant="contained"
                                     sx={{
                                         backgroundColor: "#0E4D65"
@@ -271,7 +271,7 @@ export default function Contact() {
                                     }}
                                 >
                                     Volunteer
-                                </Button>
+                                </Button> */}
                             </Box>
                         </Box>
                     </Box>

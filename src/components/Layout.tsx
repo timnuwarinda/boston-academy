@@ -129,43 +129,51 @@ export default function Layout({ children }: Props) {
                             </Button>
                         </Box>
                         <Box display="grid" gridTemplateColumns={"1fr 1fr"} gap="4rem">
-                            <Box display="flex" flexDirection="column" gap="1rem">
+                            <Box display="flex" flexDirection="column" >
                                 <Typography fontFamily="Gilroy-Bold">Site Map</Typography>
-                                <Link href="/">
-                                    <Typography>
-                                        Home
-                                    </Typography>
-                                </Link>
-                                <Link href="/about">
-                                    <Typography>
-                                        About
-                                    </Typography>
-                                </Link>
-                                <Link href="/board">
-                                    <Typography>
-                                        Board
-                                    </Typography>
-                                </Link>
-                                <Link href="/contact">
-                                    <Typography>
-                                        Contact
-                                    </Typography>
-                                </Link>
-                                <Link href="/">
-                                    <Typography>
-                                        Donate
-                                    </Typography>
-                                </Link>
+                                <Box>
+                                    <Link href="/">
+                                        <Typography>
+                                            Home
+                                        </Typography>
+                                    </Link>
+                                    <Link href="/about">
+                                        <Typography>
+                                            About
+                                        </Typography>
+                                    </Link>
+                                    <Link href="/board">
+                                        <Typography>
+                                            Board
+                                        </Typography>
+                                    </Link>
+                                    <Link href="/contact">
+                                        <Typography>
+                                            Contact
+                                        </Typography>
+                                    </Link>
+                                    <Link href="/">
+                                        <Typography>
+                                            Donate
+                                        </Typography>
+                                    </Link>
+                                </Box>
                             </Box>
-                            <Box display="flex" flexDirection="column" gap="1rem">
+                            <Box>
+                                <Typography fontFamily={"Gilroy-Bold"}>Address</Typography>
+                                <Typography>P.O Box 365058</Typography>
+                                <Typography>Boston, MA 02136</Typography>
+                                <Typography>United States</Typography>
+                            </Box>
+                            {/* <Box display="flex" flexDirection="column" gap="1rem">
                                 <Typography fontFamily="Gilroy-Bold">Socials</Typography>
                                 <Link href="/">Facebook</Link>
                                 <Link href="/">LinkedIn</Link>
                                 <Link href="/">Instagram</Link>
                                 <Link href="/">Twitter</Link>
-                            </Box>
+                            </Box> */}
                         </Box>
-                        <Box display="flex" flexDirection="column" gap="1rem" >
+                        {/* <Box display="flex" flexDirection="column" gap="1rem" >
                             <Typography fontSize={["2rem"]}>Sign Up for our Newsletter</Typography>
                             <TextField
                                 variant="standard"
@@ -177,7 +185,7 @@ export default function Layout({ children }: Props) {
                                     }
                                 }}
                             />
-                        </Box>
+                        </Box> */}
                     </Box>
                     <Box display="flex" flexDirection={["column", "row"]} justifyContent={"space-between"}>
                         <Typography
@@ -192,11 +200,11 @@ export default function Layout({ children }: Props) {
                             fontSize={["0.75rem", "0.875rem"]}
                             color="white"
                             sx={{ cursor: "pointer" }}
-                            onClick={() => router.push("tel:+18577195299")}
+                            onClick={() => router.push("tel:+6179227505")}
                         >
-                            Tel: +1-857-719-5299
+                            Tel: +617-922-7505
                         </Typography>
-                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >© 2022 BUA. All rights reserved.</Typography>
+                        <Typography fontSize={["0.75rem", "0.875rem"]} color="white" >© 2024 BUA. All rights reserved.</Typography>
                     </Box>
                 </Box>
             </footer>
