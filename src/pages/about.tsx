@@ -4,6 +4,8 @@ import { Box } from "@mui/system"
 import Image from "next/image"
 import React from "react"
 
+
+// ABOUT PAGE
 export default function About() {
     return (
         <Layout>
