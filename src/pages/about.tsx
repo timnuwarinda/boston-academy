@@ -155,7 +155,15 @@ export default function About() {
               />
             </Box>
             <Box>
-              <Box height="6rem"></Box>
+              <Box height="6rem">
+              <Typography
+                  maxWidth={["100%", "30rem"]}
+                  fontSize={["1rem", "1.25rem"]}
+                >
+                  <Box sx={{ fontStyle: 'italic', m: 1 }}>“If you listen and observe children, they will teach you how to teach them.”</Box>
+                  <Box sx={{ textAlign: 'right', m: 1 }}>Jawanza Kunjufu</Box>
+                </Typography>
+              </Box>
               <Box>
                 <Image
                   src="https://res.cloudinary.com/dfmoqlbyl/image/upload/v1680466657/Boston%20Academy/Rectangle_82_thjrjd.png"
