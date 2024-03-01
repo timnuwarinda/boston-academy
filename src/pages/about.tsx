@@ -155,13 +155,9 @@ export default function About() {
               />
             </Box>
             <Box>
-              <Box height="6rem">
-              <Typography
-                  maxWidth={["100%", "30rem"]}
-                  fontSize={["1rem", "1.25rem"]}
-                >
-                  <Box sx={{ fontStyle: 'italic', m: 1 }}>“If you listen and observe children, they will teach you how to teach them.”</Box>
-                  <Box sx={{ textAlign: 'right', m: 1 }}>Jawanza Kunjufu</Box>
+              <Box display={"grid"} gridTemplateColumns={["1fr", "1fr", "1fr 1fr"]}>
+                <Typography width={["100%", "30rem", "30rem", "40rem"]} fontSize={["1rem", "1.25rem"]}>
+                &quot;If you listen and observe children, they will teach you how to teach them.&quot; - Jawanza Kunjufu
                 </Typography>
               </Box>
               <Box>
