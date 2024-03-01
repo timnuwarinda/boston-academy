@@ -157,7 +157,7 @@ export default function About() {
             <Box>
               <Box display={"grid"} gridTemplateColumns={["1fr"]}>
                 <Typography width={["100%"]} fontSize={["1rem", "1.25rem"]}>
-                <Box sx={{ fontStyle: 'italic', m: 1 }}>&quot;If you listen and observe children, they will teach you how to teach them.&quot;</Box>
+                <Box>&quot;If you listen and observe children, they will teach you how to teach them.&quot;</Box>
                 <Box sx={{ textAlign: 'right', m: 1 }}>- Jawanza Kunjufu</Box>
                 </Typography>
               </Box>
