@@ -156,7 +156,7 @@ export default function About() {
             </Box>
             <Box>
               <Box display={"grid"} gridTemplateColumns={["1fr"]}>
-                <Typography width={["100%"]} fontSize={["1rem", "1.25rem"]}>
+                <Typography width={["100%"]} fontSize={["1rem", "1.25rem"]} padding={["1rem"]}>
                 <Box>&quot;If you listen and observe children, they will teach you how to teach them.&quot;</Box>
                 <Box sx={{ textAlign: 'right', m: 1 }}>- Jawanza Kunjufu</Box>
                 </Typography>
